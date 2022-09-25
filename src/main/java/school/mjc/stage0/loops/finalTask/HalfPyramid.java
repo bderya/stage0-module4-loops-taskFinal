@@ -7,17 +7,17 @@ public class HalfPyramid {
 		{
             for (int j = 1; j <= cathetusLength; j++)
 			{
-                if (j >= i)
-				{
-                    System.out.print("*");
-                }
-				else
+                if (i + j <= cathetusLength)
 				{
                     System.out.print(" ");
                 }
+				else
+				{
+                    System.out.print("*");
+                }
             }
-            System.out.print("\n");
-		}
+            System.out.println();
+        }
     }
 
     public static void main(String[] args) {
